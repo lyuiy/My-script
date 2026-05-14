@@ -5,7 +5,7 @@
 #!version=1.0
 
 [Script]
-yimu_vip = type=http-response,pattern=^https?:\/\/yimuapp\.com:8082\/bookkeeping\/user\/getUserInfoById,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lyuiy/My-script/main/yimujizhang.js
+yimu_vip = type=http-response,pattern=^https?:\/\/yimuapp\.com:8082\/bookkeeping\/user\/getUserInfoById,requires-body=1,max-size=0,script-https://raw.githubusercontent.com/lyuiy/My-script/main/script/yimujizhang.js
 
 [MITM]
 hostname = %APPEND% yimuapp.com, *.yimuapp.com
