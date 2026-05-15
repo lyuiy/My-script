@@ -7,7 +7,7 @@
 #!arguments=SignMode:"fixed",Cron:"0 9 * * *"
 
 [Script]
-NodeSeek 获取 Token = type=http-response,pattern=^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/.+\?readme=1&signature=1&phone=1,requires-body=1,timeout=60,script-path=https://你的脚本地址/nodeseek.js
+NodeSeek 获取 Token = type=http-response,pattern=^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/.+\?readme=1&signature=1&phone=1,requires-body=1,timeout=60,script-path=https://https://raw.githubusercontent.com/lyuiy/My-script/refs/heads/main/script/nodeseek.js
 
 NodeSeek 每日签到 = type=cron,cronexp="{{{Cron}}}",timeout=60,script-path=https://你的脚本地址/nodeseek.js,argument=signMode={{{SignMode}}}
 
