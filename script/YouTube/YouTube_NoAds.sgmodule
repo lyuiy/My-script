@@ -1,7 +1,6 @@
-#!name=YouTube去广告隐藏Shorts版@Aioneas
+#!name=YouTube去广告隐藏Shorts版
 #!desc=去除 YouTube 广告、隐藏 Shorts、去除首页 Shorts 区块、去除视频内嵌购物推荐卡
 #!author=DivineEngine + app2smile + Maasea + ddgksf2013 + Aioneas + Oneasai + ZenmoFeiShi
-#!date=2026-04-30
 
 [URL Rewrite]
 
@@ -11,11 +10,9 @@
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) reject-200
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext reject-200
 
-
 [Script]
 
-YouTube去广告隐藏Shorts = type=http-response, pattern=^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), requires-body=true, binary-body-mode=true, max-size=0, timeout=60, script-path=https://raw.githubusercontent.com/你的用户名/你的仓库/refs/heads/main/Script/youtube.response.js
-
+YouTube去广告隐藏Shorts = type=http-response, pattern=^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), requires-body=true, binary-body-mode=true, max-size=0, timeout=60, script-path=https://raw.githubusercontent.com/lyuiy/My-script/refs/heads/main/script/YouTube/YouTube_NoAds.js
 
 [MITM]
 
