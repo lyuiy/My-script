@@ -9,7 +9,7 @@
 [Script]
 NodeSeek 获取 Token = type=http-response,pattern=^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/,requires-body=1,timeout=60,script-path=https://raw.githubusercontent.com/你的用户名/你的仓库/main/nodeseek.js
 
-NodeSeek 每日签到 = type=cron,cronexp="{{{Cron}}}",timeout=60,script-path=https://raw.githubusercontent.com/你的用户名/你的仓库/main/nodeseek.js,argument=signMode={{{SignMode}}}
+NodeSeek 每日签到 = type=cron,cronexp="{{{Cron}}}",timeout=60,script-path=https://raw.githubusercontent.comlyuiy/My-script/script/NodeSeek/nodeseek-egern.js,argument=signMode={{{SignMode}}}
 
 [MITM]
 hostname = %APPEND% www.nodeseek.com
