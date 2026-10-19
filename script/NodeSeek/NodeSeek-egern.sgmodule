@@ -1,6 +1,6 @@
 #!name=NodeSeek自用签到
 #!desc=NodeSeek 每日签到，支持固定 5 鸡腿或随机签到。SignMode=fixed 为固定，SignMode=random 为随机。
-#!author=Sliverkiss Modified
+#!author=Leon
 #!icon=https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/NodeSeek.png
 #!homepage=https://www.nodeseek.com/
 #!date=2026-04-01
