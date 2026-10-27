@@ -1,5 +1,5 @@
 #!name=美团App 12.67.403
-#!desc=原 QX 配置更新于 2026-10-25；转换为 Surge / Egern 兼容模块，保留全部规则并引用原作者 MT.js。
+#!desc=原 QX 配置更新于 2026-10-25；转换为 Surge / Egern 兼容模块，保留全部规则；MT.js 原样镜像于 lyuiy/My-script。
 #!author=TG@ZenMoFiShi
 
 [Rule]
@@ -55,14 +55,14 @@ IP-CIDR6,2402:4e00:40:40::2:373/128,REJECT
 ^http:\/\/103\.37\.155\.60\/fetch - reject
 
 [Script]
-MT-01 = type=http-response, pattern=^https?:\/\/apimobile\.meituan\.com\/aggroup\/indexTab, requires-body=true, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
-MT-02 = type=http-response, pattern=^https?:\/\/feedguess\.meituan\.com\/lycoris\/scene\/(gwc_feed1_2265|personalcenter_2154)(\?|$), requires-body=true, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
-MT-03 = type=http-response, pattern=^https?:\/\/mt-personalcenter\.meituan\.com\/usercenter\/display, requires-body=true, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
-MT-04 = type=http-response, pattern=^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpage\/defaultword, requires-body=true, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
-MT-05 = type=http-response, pattern=^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpage\/hotword\/city\/divide\/hotrecommend\/, requires-body=true, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
-MT-06 = type=http-response, pattern=^https?:\/\/assistify\.meituan\.com\/assistant\/getAppClientHornConfig, requires-body=true, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
-MT-07 = type=http-response, pattern=^https?:\/\/mop\.meituan\.com\/mop\/entry\/shoppingCartEntry, requires-body=true, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
-MT-08 = type=http-response, pattern=^https?:\/\/mop\.meituan\.com\/api\/entryModule\/startupPicture, requires-body=true, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.js
+MT-01 = type=http-response, pattern=^https?:\/\/apimobile\.meituan\.com\/aggroup\/indexTab, requires-body=true, script-path=https://raw.githubusercontent.com/lyuiy/My-script/main/script/Meituan/MT.js
+MT-02 = type=http-response, pattern=^https?:\/\/feedguess\.meituan\.com\/lycoris\/scene\/(gwc_feed1_2265|personalcenter_2154)(\?|$), requires-body=true, script-path=https://raw.githubusercontent.com/lyuiy/My-script/main/script/Meituan/MT.js
+MT-03 = type=http-response, pattern=^https?:\/\/mt-personalcenter\.meituan\.com\/usercenter\/display, requires-body=true, script-path=https://raw.githubusercontent.com/lyuiy/My-script/main/script/Meituan/MT.js
+MT-04 = type=http-response, pattern=^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpage\/defaultword, requires-body=true, script-path=https://raw.githubusercontent.com/lyuiy/My-script/main/script/Meituan/MT.js
+MT-05 = type=http-response, pattern=^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpage\/hotword\/city\/divide\/hotrecommend\/, requires-body=true, script-path=https://raw.githubusercontent.com/lyuiy/My-script/main/script/Meituan/MT.js
+MT-06 = type=http-response, pattern=^https?:\/\/assistify\.meituan\.com\/assistant\/getAppClientHornConfig, requires-body=true, script-path=https://raw.githubusercontent.com/lyuiy/My-script/main/script/Meituan/MT.js
+MT-07 = type=http-response, pattern=^https?:\/\/mop\.meituan\.com\/mop\/entry\/shoppingCartEntry, requires-body=true, script-path=https://raw.githubusercontent.com/lyuiy/My-script/main/script/Meituan/MT.js
+MT-08 = type=http-response, pattern=^https?:\/\/mop\.meituan\.com\/api\/entryModule\/startupPicture, requires-body=true, script-path=https://raw.githubusercontent.com/lyuiy/My-script/main/script/Meituan/MT.js
 
 [MITM]
 hostname = %APPEND% apimobile.meituan.com, feedguess.meituan.com, mop.meituan.com, mt-personalcenter.meituan.com, assistify.meituan.com, httpdns.meituan.com, httpdnsmultiapi.meituan.com
